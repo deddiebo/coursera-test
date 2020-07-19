@@ -1,0 +1,97 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  background-color: #aaaaaa;
+  width: auto;
+  height: 150px;
+  color: black;
+  float: left;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  position: center;
+  margin: 25px;
+  clear: both;
+  overflow: hidden;
+  font-size: 16;
+ 
+}
+.row {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
+#chicken {
+  font-size: 20px;
+  background-color: pink;
+  height: 14%;
+  width: 24%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+}
+#beef {
+  font-size: 20px;
+  background-color: red;
+  height: 14%;
+  width: 24%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  color: white
+}
+#sushi {
+  font-size: 20px;
+  background-color: yellow;
+  height: 14%;
+  width: 24%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    position: relative;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    position: relative;
+  }
+  .col-md-6 {
+    width: 50%;
+}
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 991px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  	float: left;
+    position: relative;
+  }
+   .col.sm-12 {
+      width: 100%;
+    }
+}
