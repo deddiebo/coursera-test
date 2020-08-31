@@ -1,0 +1,7 @@
+
+<ul class="menuSelect">
+<li ng-repeat="item in menuz.items">
+    <button ng-click="menuz.removeItem($index);">Don't want this one</button>
+    {{ item.name }},  {{ item.short_name }},  {{ item.description }}
+  </li>
+</ul>
