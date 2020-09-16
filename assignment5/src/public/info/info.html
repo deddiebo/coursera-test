@@ -1,0 +1,30 @@
+<div ng-if = "infoCtrl.myData.firstname" class="container" style="font-size: 1.5em;">
+  <h2 id="info-title" class="text-center">My Info</h2>
+  <span>Firstname: {{ infoCtrl.myData.firstname }}</span><br>
+  <span>Last name: {{ infoCtrl.myData.lastname }}</span><br>
+  <span>email: {{ infoCtrl.myData.email }}</span><br>
+  <span>phone: {{ infoCtrl.myData.phone }}</span><br>
+  <span>Favorite Dish:</span>
+</div>
+
+<div ng-if = "!infoCtrl.myData.firstname" class="container" style="font-size: 1.5em; ">
+  <h2 id="info-title"  class="text-center">Not Signed Up Yet. <a ui-sref="public.signup" style="color: yellow;">Sign up Now!</a></h2>
+ </div>
+
+<div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div>{{infoCtrl.result.data.short_name}}</div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://deb-spot.herokuapp.com/images/{{infoCtrl.result.data.short_name}}.jpg" alt="{{infoCtrl.result.data.name}}">
+      </div>
+      <div class="menu-item-price">{{infoCtrl.result.data.price_small | currency}}<span> {{infoCtrl.result.data.small_portion_name}}</span> {{infoCtrl.result.data.price_large | currency}} <span>{{infoCtrl.result.data.large_portion_name}}</span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title">{{infoCtrl.result.data.name}}</h3>
+      <p class="menu-item-details">{{infoCtrl.result.data.description}}</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+
