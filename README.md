@@ -1,3 +1,3 @@
 # coursera-test
 Coursera test repository
-spelled it correctly
+HTML, CSS, JavaScript course from John Hopkins
